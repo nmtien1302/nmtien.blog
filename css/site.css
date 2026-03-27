@@ -186,58 +186,57 @@ body {
     animation: spin 1.5s linear infinite;
 }
 @media (max-width: 768px) {
-
     body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh; /* 👈 đổi từ height */
+        height: auto;
+        padding: 10px;
+        align-items: flex-start;
     }
-
     .outer {
-        padding: 20px;
-        border-radius: 20px;
+        padding: 15px;
+        width: 100%;
     }
-
     .wrapper {
-        width: 92%;
-        max-width: 380px;
+        width: 100%;
     }
-
     .top {
-        height: 190px; /* 👈 tăng nhẹ cho giống ảnh 1 */
+        height: 200px;
     }
 
+    /* PROFILE FIX CHUẨN */
     .profile {
-        top: 170px;
-        left: 50%;              /* 👈 fix chuẩn */
-        transform: translateX(-50%);
+        top: 160px;
+        left: 15px;
+        transform: none; /* 👈 QUAN TRỌNG: bỏ lệch */
     }
-
     .avatar {
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
+        transform: translateY(20px);
     }
-
     .info-header {
-        padding-left: 120px; /* 👈 cân lại chữ */
+        padding-left: 0; /* 👈 bỏ cái gây lỗi */
     }
 
+        .info-header h2 {
+            font-size: 16px;
+        }
+
+        .info-header p {
+            font-size: 12px;
+        }
     .card {
-        margin-top: 35px;
-        padding: 22px;
+        margin-top: 50px;
+        padding: 15px;
     }
-
-    .info-header h2 {
-        font-size: 20px;
-    }
-
-    .info-header p {
-        font-size: 14px;
-    }
-
     .links a {
-        font-size: 13px;
-        padding: 10px 12px;
+        display: block;
+        margin: 8px 0;
+    }
+    .music {
+        width: 45px;
+        height: 45px;
+        right: 10px;
+        top: -18px;
+        font-size: 16px;
     }
 }
