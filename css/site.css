@@ -12,31 +12,7 @@ body {
     align-items: center;
     height: 100vh;
 }
-/* MOBILE */
-@media (max-width: 768px) {
 
-    body {
-        display: block !important;
-        height: auto !important;     
-        padding: 0;
-    }
-
-    .outer {
-        width: 100%;
-        min-height: 100vh;
-        padding: 10px;
-        border-radius: 0;
-    }
-
-    .wrapper {
-        width: 100% !important;
-        max-width: 100% !important;
-    }
-
-    .top {
-        height: 260px;
-    }
-}
     body::before {
         
         content: "";
@@ -209,6 +185,7 @@ body {
 .music.spin {
     animation: spin 1.5s linear infinite;
 }
+
 @media (max-width: 768px) {
 
     /* BODY */
@@ -216,6 +193,8 @@ body {
         height: auto;
         padding: 0;
         align-items: flex-start;
+        display: block !important;
+        height: auto !important;     
     }
 
     /* KHUNG NGOÀI */
@@ -223,18 +202,19 @@ body {
         padding: 10px;
         width: 100%;
         border-radius: 0; /* full màn hình */
+        min-height: 100vh;
     }
 
     /* WRAPPER FULL */
     .wrapper {
-        width: 100%;
-        max-width: 100%;
+        width: 92% !important;
+        max-width: 420% !important;
     }
 
     /* ẢNH COVER TO HƠN */
     .top {
-        height: 260px; /* 👈 TO GIỐNG ẢNH BẠN */
         border-radius: 16px;
+                height: 200px;
     }
 
     /* PROFILE (CHO ĐẸP CHUẨN) */
