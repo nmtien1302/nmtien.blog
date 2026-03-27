@@ -9,9 +9,11 @@ body {
     user-select: none;
     background: #0b0b0c;
 
-    display: block;
+    display: flex;              /* 👈 bật lại */
+    justify-content: center;    /* 👈 ngang */
+    align-items: center;        /* 👈 dọc */
 
-    min-height: 100vh; /* 👈 thay vì height */
+    min-height: 100vh;          /* 👈 QUAN TRỌNG */
 }
     body::before {
         content: "";
@@ -24,16 +26,15 @@ body {
         z-index: -1;
     }
 .outer {
-     padding: 10px; 
+     padding: 16px; 
     border-radius: 24px;
     background: #0f0f10;
     border: 1px solid #1f1f1f;
     box-shadow: 0 20px 60px rgba(0,0,0,0.8);
 }
 .wrapper {
-    width: 100%;        /* 👈 cho nó giãn */
-    max-width: 500px;   /* 👈 giữ form desktop */
-    position: relative;
+    width: 90%;        /* 👈 thay vì 500px */
+    max-width: 500px;
     margin: 0 auto;
 }
 
