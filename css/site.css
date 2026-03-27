@@ -189,71 +189,76 @@ body {
     /* BODY */
     body {
         height: auto;
-        padding: 10px;
+        padding: 0;
         align-items: flex-start;
     }
 
     /* KHUNG NGOÀI */
     .outer {
-        padding: 15px;
+        padding: 10px;
         width: 100%;
+        border-radius: 0; /* full màn hình */
     }
 
-    /* WRAPPER */
+    /* WRAPPER FULL */
     .wrapper {
         width: 100%;
+        max-width: 100%;
     }
 
-    /* BACKGROUND */
+    /* ẢNH COVER TO HƠN */
     .top {
-        height: 200px;
+        height: 260px; /* 👈 TO GIỐNG ẢNH BẠN */
+        border-radius: 16px;
     }
 
-    /* PROFILE FIX CHUẨN */
+    /* PROFILE (CHO ĐẸP CHUẨN) */
     .profile {
-        top: 160px;
-        left: 15px;
-        transform: none; /* 👈 QUAN TRỌNG: bỏ lệch */
+        top: 180px;
+        left: 20px;
+        transform: none;
     }
 
-    /* AVATAR */
+    /* AVATAR TO HƠN */
     .avatar {
-        width: 70px;
-        height: 70px;
+        width: 90px;
+        height: 90px;
         transform: translateY(20px);
     }
 
-    /* TEXT HEADER */
+    /* TEXT */
     .info-header {
-        padding-left: 0; /* 👈 bỏ cái gây lỗi */
+        padding-left: 0;
     }
 
-        .info-header h2 {
-            font-size: 16px;
-        }
+    .info-header h2 {
+        font-size: 18px;
+    }
 
-        .info-header p {
-            font-size: 12px;
-        }
+    .info-header p {
+        font-size: 13px;
+    }
 
-    /* CARD */
+    /* CARD TO HƠN */
     .card {
-        margin-top: 50px;
-        padding: 15px;
+        margin-top: 60px;
+        padding: 20px;
+        border-radius: 16px;
     }
 
-    /* LINKS */
+    /* LINK FULL WIDTH */
     .links a {
         display: block;
-        margin: 8px 0;
+        margin: 10px 0;
+        padding: 10px;
+        font-size: 14px;
     }
 
     /* MUSIC */
     .music {
-        width: 45px;
-        height: 45px;
+        width: 60px;
+        height: 60px;
+        top: -25px;
         right: 10px;
-        top: -18px;
-        font-size: 16px;
     }
 }
