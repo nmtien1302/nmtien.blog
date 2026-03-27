@@ -197,21 +197,11 @@ body {
     .outer {
         padding: 15px;
         width: 100%;
-        display: flex;
-        justify-content: center;
     }
 
+    /* WRAPPER */
     .wrapper {
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .card {
-        width: 100%;
-        max-width: 320px;
-        margin: 10px auto 0;
     }
 
     /* BACKGROUND */
@@ -246,18 +236,8 @@ body {
             font-size: 12px;
         }
 
-    .links {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    /* CARD */
+    .card {
+        margin-top: 50px;
+        padding: 15px;
     }
-
-    /* MUSIC */
-    .music {
-        width: 45px;
-        height: 45px;
-        right: 10px;
-        top: -18px;
-        font-size: 16px;
-    }
-}
