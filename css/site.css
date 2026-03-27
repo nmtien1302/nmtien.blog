@@ -17,7 +17,7 @@ body {
         content: "";
         position: fixed;
         inset: 0;
-        background: url('/css/bg.jpg') center/cover no-repeat;
+        background: url('bg.jpg') center/cover no-repeat;
         filter: blur(25px) brightness(0.5);
         transform: scale(1.2); /* tránh bị viền trắng */
 
