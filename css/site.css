@@ -186,6 +186,19 @@ body {
 }
 @media (max-width: 768px) {
 
+        body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .outer {
+        width: 90%;           /* 👈 KHÔNG full */
+        max-width: 350px;     /* 👈 giới hạn */
+        margin: 0 auto;
+    }
     /* ===== AVATAR + TÊN ===== */
     .profile {
         position: relative;   /* ❗ bỏ absolute */
