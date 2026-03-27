@@ -40,8 +40,8 @@ body {
 .top {
     height: 260px;
     background: url('hinh1.jpg') center/cover no-repeat;
-        border-radius: 20px; 
-    overflow: hidden;  
+        border-radius: 20px; /* 👈 bo đủ 4 góc */
+    overflow: hidden;    /* 👈 QUAN TRỌNG */
 }
 
 .profile {
