@@ -186,79 +186,38 @@ body {
 }
 @media (max-width: 768px) {
 
-    /* BODY */
+    /* 1. CENTER TOÀN BỘ */
     body {
-        height: auto;
-        padding: 10px;
+        display: flex;
+        justify-content: center;
         align-items: flex-start;
     }
 
-    /* KHUNG NGOÀI */
     .outer {
-        padding: 15px;
         width: 100%;
         display: flex;
         justify-content: center;
     }
 
-    /* WRAPPER */
     .wrapper {
         width: 100%;
-        align-items: center;
+        max-width: 350px; /* 👈 KEY */
+        margin: 0 auto;
     }
 
-    /* BACKGROUND */
-    .top {
-        height: 200px;
-    }
-
-    /* PROFILE FIX CHUẨN */
+    /* 2. BỎ ABSOLUTE GÂY LỆCH */
     .profile {
-        top: 160px;
-        left: 15px;
-        transform: none; /* 👈 QUAN TRỌNG: bỏ lệch */
+        position: relative; /* 👈 QUAN TRỌNG NHẤT */
+        top: -40px;
+        left: 0;
+        transform: none;
+        justify-content: center;
     }
 
-    /* AVATAR */
-    .avatar {
-        width: 70px;
-        height: 70px;
-        transform: translateY(20px);
-    }
-
-    /* TEXT HEADER */
-    .info-header {
-        padding-left: 0; /* 👈 bỏ cái gây lỗi */
-    }
-
-        .info-header h2 {
-            font-size: 16px;
-        }
-
-        .info-header p {
-            font-size: 12px;
-        }
-
-    /* CARD */
+    /* 3. CENTER CARD */
     .card {
-        align-self: center;
-        margin: 20px auto 0; /* 👈 KEY: auto để căn giữa */
         width: 100%;
-        max-width: 320px; /* 👈 giữ form đẹp, không bị full tràn */
+        margin: 0 auto;
     }
 
-    .links {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    /* MUSIC */
-    .music {
-        width: 45px;
-        height: 45px;
-        right: 10px;
-        top: -18px;
-        font-size: 16px;
-    }
 }
