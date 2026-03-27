@@ -239,6 +239,7 @@ body {
 
     /* CARD */
     .card {
+        align-self: center;
         margin: 20px auto 0; /* 👈 KEY: auto để căn giữa */
         width: 100%;
         max-width: 320px; /* 👈 giữ form đẹp, không bị full tràn */
