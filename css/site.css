@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    user-select: none;
+    background: #0b0b0c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+    body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background: url('bg.jpg') center/cover no-repeat;
+        filter: blur(25px) brightness(0.5);
+        transform: scale(1.2); /* tránh bị viền trắng */
+
+        z-index: -1;
+    }
+.outer {
+    padding: 40px;
+    border-radius: 24px;
+    background: #0f0f10;
+    border: 1px solid #1f1f1f;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.8);
+}
+/* KHUNG */
+.wrapper {
+    width: 500px;
+    position: relative;
+}
+
+/* BACKGROUND */
+.top {
+    height: 260px;
+    background: url('hinh1.jpg') center/cover no-repeat;
+        border-radius: 20px; /* 👈 bo đủ 4 góc */
+    overflow: hidden;    /* 👈 QUAN TRỌNG */
+}
+
+.profile {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    left: 20px;   /* 👈 BẰNG padding của .wrapper */
+    top: -55px;   /* chỉnh theo chiều cao ảnh */
+    position: relative;
+    transform: none;
+}
+
+.info-header {
+    transform: translateY(20px);
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    padding: 0;
+}
+
+/* AVATAR */
+.avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 4px solid #0b0b0c;
+    box-shadow: 0 0 0 3px #4e00a5;
+    transform: translateY(30px); 
+
+}
+/* CARD */
+.card {
+    margin-top: 40px;
+    padding: 30px 25px;
+    background: #111;
+    border: 1px solid #2a2a2a;
+    border-radius: 20px;
+    position: relative;
+}
+
+.music {
+    position: absolute;
+    top: -30px;
+    right: 15px;
+    width: 70px; /* 👈 to hơn */
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 12px solid #000000;
+    box-shadow: 0 0 0 10px #000000;
+    cursor: pointer;
+    transition: 10s;
+}
+    /* ẢNH TRONG NÚT */
+    .music img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    /* XOAY */
+    .music.spin img {
+        animation: spin 20s linear infinite;
+    }
+    .music:hover img {
+        filter: brightness(1.2);
+    }
+    .music:hover {
+        background: #2a2a2a;
+    }
+
+/* INFO */
+.info {
+    margin-top: 25px;
+    text-align: center;
+}
+
+    .info p {
+        margin: 6px 0;
+        color: #ddd;
+    }
+
+/* LINKS */
+.links {
+    margin-top: 15px;
+    text-align: center;
+}
+
+    .links a {
+        display: inline-block;
+        margin: 5px;
+        padding: 8px 14px;
+        border: 1px solid #333;
+        border-radius: 8px;
+        color: white;
+        text-decoration: none;
+        font-size: 13px;
+    }
+
+        .links a:hover {
+            background: #1f1f1f;
+        }
+        .links a:nth-child(1):hover {
+            background: rgba(24, 119, 242, 0.15);
+            border-color: rgba(24, 119, 242, 0.4);
+            color: #fff;
+        }
+        .links a:nth-child(2):hover {
+            background: linear-gradient( 45deg, rgba(255, 0, 150, 0.15), rgba(255, 200, 0, 0.15) );
+            border-color: rgba(255, 100, 150, 0.4);
+            color: #fff;
+        }
+        .links a:nth-child(3):hover {
+            background: rgba(255, 85, 0, 0.15);
+            border-color: rgba(255, 85, 0, 0.4);
+            color: #fff;
+        }
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.music.spin {
+    animation: spin 1.5s linear infinite;
+}
+@media (max-width: 768px) {
+
+        body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+    .wrapper {
+        width: 100% !important;
+        max-width: 100%;
+    }
+    .outer {
+        width: 90%;           /* 👈 KHÔNG full */
+        max-width: 350px;     /* 👈 giới hạn */
+        margin: 0 auto;
+    }
+    .avatar {
+        width: 60px;
+        height: 60px;
+        transform: none;
+    }
+.profile {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+    left: 20px;   
+    top: -55px;   
+    position: relative;
+    transform: none;
+}
+
+.info-header {
+    transform: translateY(20px);
+    padding: 0;
+    margin: 0;
+    color: #ffffff;
+    padding: 0;
+}
+    /* ===== CARD ===== */
+    .card {
+        margin-top: 10px;
+        padding: 15px;
+        width: 100%;
+    }
+
+    /* ===== INFO TEXT ===== */
+    .info {
+        margin-top: 10px;
+    }
+
+    /* ===== LINKS (NẰM NGANG) ===== */
+    .links {
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+    }
+
+    .links a {
+        flex: none;         
+        width: 30%;  
+        text-align: center;
+        padding: 8px 5px;
+        font-size: 12px;
+    }
+    .music {
+    width: 40px;
+    height: 40px;
+    top: -15px;
+    right: 10px;
+}
+
+.music img {
+    width: 100%;
+    height: 100%;
+}
+}
