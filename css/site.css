@@ -193,7 +193,10 @@ body {
         align-items: center;
         padding: 10px;
     }
-
+    .wrapper {
+        width: 100% !important;
+        max-width: 100%;
+    }
     .outer {
         width: 90%;           /* 👈 KHÔNG full */
         max-width: 350px;     /* 👈 giới hạn */
