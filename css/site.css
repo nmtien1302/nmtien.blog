@@ -39,7 +39,7 @@ body {
 /* BACKGROUND */
 .top {
     height: 260px;
-    background: url('Hinh 1.jpg') center/cover no-repeat;
+    background: url('hinh1.jpg') center/cover no-repeat;
         border-radius: 20px; /* 👈 bo đủ 4 góc */
     overflow: hidden;    /* 👈 QUAN TRỌNG */
 }
