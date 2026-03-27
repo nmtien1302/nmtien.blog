@@ -238,14 +238,15 @@ body {
 
     /* CARD */
     .card {
-        margin-top: 50px;
-        padding: 15px;
+        margin: 20px auto 0; /* 👈 KEY: auto để căn giữa */
+        width: 100%;
+        max-width: 320px; /* 👈 giữ form đẹp, không bị full tràn */
     }
 
-    /* LINKS */
-    .links a {
-        display: block;
-        margin: 8px 0;
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     /* MUSIC */
