@@ -191,42 +191,53 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        min-height: 100vh; /* 👈 đổi từ height */
     }
 
     .outer {
         padding: 20px;
         border-radius: 20px;
-        width: auto; /* 👈 QUAN TRỌNG */
     }
 
     .wrapper {
-        width: 85%;        /* 👈 chỉnh tỉ lệ giống ảnh */
-        max-width: 360px;  /* 👈 giữ nhỏ gọn */
+        width: 92%;
+        max-width: 380px;
     }
 
     .top {
-        height: 180px; /* 👈 thấp lại cho đẹp */
+        height: 190px; /* 👈 tăng nhẹ cho giống ảnh 1 */
     }
 
     .profile {
-        top: 160px;
-        left: 25%;
+        top: 170px;
+        left: 50%;              /* 👈 fix chuẩn */
         transform: translateX(-50%);
     }
 
     .avatar {
-        width: 75px;
-        height: 75px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .info-header {
+        padding-left: 120px; /* 👈 cân lại chữ */
     }
 
     .card {
-        margin-top: 30px;
-        padding: 18px;
+        margin-top: 35px;
+        padding: 22px;
+    }
+
+    .info-header h2 {
+        font-size: 20px;
+    }
+
+    .info-header p {
+        font-size: 14px;
     }
 
     .links a {
         font-size: 13px;
-        padding: 8px 12px;
+        padding: 10px 12px;
     }
 }
