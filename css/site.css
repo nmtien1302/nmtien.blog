@@ -201,10 +201,17 @@ body {
         justify-content: center;
     }
 
-    /* WRAPPER */
     .wrapper {
         width: 100%;
+        display: flex;
+        flex-direction: column;
         align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 320px;
+        margin: 10px auto 0;
     }
 
     /* BACKGROUND */
@@ -238,12 +245,6 @@ body {
         .info-header p {
             font-size: 12px;
         }
-    .card {
-        align-self: center;
-        margin: 10px auto 0; 
-        width: 100%;
-        max-width: 320px;
-    }
 
     .links {
         display: flex;
