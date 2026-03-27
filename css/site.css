@@ -208,29 +208,18 @@ body {
         transform: none;
     }
 .profile {
-    position: relative;
-    top: -30px;
-
     display: flex;
     align-items: center;
     gap: 12px;
 
-    left: 0;
-    transform: none;
+    position: relative;
+    top: -30px;
 }
 
-.profile + .info-header {
-    display: inline-block;
-    vertical-align: middle;
+.info-header {
+    margin: 0;
+    padding: 0;
 }
-    .info-header h2 {
-        font-size: 16px;
-    }
-
-    .info-header p {
-        font-size: 12px;
-    }
-
     /* ===== CARD ===== */
     .card {
         margin-top: 10px;
