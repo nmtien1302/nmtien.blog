@@ -187,79 +187,46 @@ body {
 }
 @media (max-width: 768px) {
 
-    /* BODY - GIỮ CENTER */
     body {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
-        padding: 0;
     }
 
-    /* KHUNG NGOÀI */
     .outer {
-        padding: 15px;
-        width: 100%;
+        padding: 20px;
         border-radius: 20px;
+        width: auto; /* 👈 QUAN TRỌNG */
     }
 
-    /* WRAPPER - FIX CHUẨN */
     .wrapper {
-        width: 92%;
-        max-width: 420px; /* 👈 QUAN TRỌNG */
+        width: 85%;        /* 👈 chỉnh tỉ lệ giống ảnh */
+        max-width: 360px;  /* 👈 giữ nhỏ gọn */
     }
 
-    /* COVER */
     .top {
-        height: 200px;
-        border-radius: 16px;
+        height: 180px; /* 👈 thấp lại cho đẹp */
     }
 
-    /* PROFILE */
     .profile {
-        top: 170px;
+        top: 160px;
         left: 25%;
         transform: translateX(-50%);
     }
 
-    /* AVATAR */
     .avatar {
-        width: 80px;
-        height: 80px;
+        width: 75px;
+        height: 75px;
     }
 
-    /* TEXT */
-    .info-header {
-        padding-left: 120px;
-    }
-
-    .info-header h2 {
-        font-size: 18px;
-    }
-
-    .info-header p {
-        font-size: 13px;
-    }
-
-    /* CARD */
     .card {
-        margin-top: 40px;
-        padding: 20px;
-        border-radius: 16px;
+        margin-top: 30px;
+        padding: 18px;
     }
 
-    /* BUTTON */
     .links a {
-        margin: 6px;
-        padding: 10px 14px;
-        font-size: 14px;
-    }
-
-    /* MUSIC */
-    .music {
-        width: 55px;
-        height: 55px;
-        top: -20px;
-        right: 10px;
+        font-size: 13px;
+        padding: 8px 12px;
     }
 }
