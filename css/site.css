@@ -12,6 +12,12 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    @media (max-width: 768px) {
+    body {
+        display: block;   /* 👈 bỏ flex */
+        height: auto;     /* 👈 bỏ 100vh */
+    }
+}
 }
     body::before {
         content: "";
