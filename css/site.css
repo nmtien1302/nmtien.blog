@@ -8,10 +8,10 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     user-select: none;
     background: #0b0b0c;
+
     display: block;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+
+    min-height: 100vh; /* 👈 thay vì height */
 }
     body::before {
         content: "";
@@ -24,15 +24,15 @@ body {
         z-index: -1;
     }
 .outer {
-    padding: 20px;
+     padding: 10px; 
     border-radius: 24px;
     background: #0f0f10;
     border: 1px solid #1f1f1f;
     box-shadow: 0 20px 60px rgba(0,0,0,0.8);
 }
-/* KHUNG */
 .wrapper {
-    width: 500px;
+    width: 100%;        /* 👈 cho nó giãn */
+    max-width: 500px;   /* 👈 giữ form desktop */
     position: relative;
     margin: 0 auto;
 }
