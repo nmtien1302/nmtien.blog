@@ -254,7 +254,8 @@ body {
     }
 
     .links a {
-        flex: 1;                 /* 👈 chia đều */
+        flex: none;         
+        width: 30%;  
         text-align: center;
         padding: 8px 5px;
         font-size: 12px;
