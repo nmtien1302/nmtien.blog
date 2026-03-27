@@ -185,55 +185,52 @@ body {
 .music.spin {
     animation: spin 1.5s linear infinite;
 }
-
 @media (max-width: 768px) {
 
-    /* BODY */
+    /* BODY - GIỮ CENTER */
     body {
-        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
         padding: 0;
-        align-items: flex-start;
-        display: block !important;
-        height: auto !important;     
     }
 
     /* KHUNG NGOÀI */
     .outer {
-        padding: 10px;
+        padding: 15px;
         width: 100%;
-        border-radius: 0; /* full màn hình */
-        min-height: 100vh;
+        border-radius: 20px;
     }
 
-    /* WRAPPER FULL */
+    /* WRAPPER - FIX CHUẨN */
     .wrapper {
-        width: 92% !important;
-        max-width: 420% !important;
+        width: 92%;
+        max-width: 420px; /* 👈 QUAN TRỌNG */
     }
 
-    /* ẢNH COVER TO HƠN */
+    /* COVER */
     .top {
+        height: 200px;
         border-radius: 16px;
-                height: 200px;
     }
 
-    /* PROFILE (CHO ĐẸP CHUẨN) */
+    /* PROFILE */
     .profile {
-        top: 180px;
-        left: 20px;
-        transform: none;
+        top: 170px;
+        left: 25%;
+        transform: translateX(-50%);
     }
 
-    /* AVATAR TO HƠN */
+    /* AVATAR */
     .avatar {
-        width: 90px;
-        height: 90px;
-        transform: translateY(20px);
+        width: 80px;
+        height: 80px;
     }
 
     /* TEXT */
     .info-header {
-        padding-left: 0;
+        padding-left: 120px;
     }
 
     .info-header h2 {
@@ -244,26 +241,25 @@ body {
         font-size: 13px;
     }
 
-    /* CARD TO HƠN */
+    /* CARD */
     .card {
-        margin-top: 60px;
+        margin-top: 40px;
         padding: 20px;
         border-radius: 16px;
     }
 
-    /* LINK FULL WIDTH */
+    /* BUTTON */
     .links a {
-        display: block;
-        margin: 10px 0;
-        padding: 10px;
+        margin: 6px;
+        padding: 10px 14px;
         font-size: 14px;
     }
 
     /* MUSIC */
     .music {
-        width: 60px;
-        height: 60px;
-        top: -25px;
+        width: 55px;
+        height: 55px;
+        top: -20px;
         right: 10px;
     }
 }
