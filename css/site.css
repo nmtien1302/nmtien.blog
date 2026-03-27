@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
     user-select: none;
@@ -12,9 +13,7 @@ body {
     align-items: center;
     height: 100vh;
 }
-
     body::before {
-        
         content: "";
         position: fixed;
         inset: 0;
@@ -41,8 +40,8 @@ body {
 .top {
     height: 260px;
     background: url('hinh1.jpg') center/cover no-repeat;
-        border-radius: 20px; /* 👈 bo đủ 4 góc */
-    overflow: hidden;    /* 👈 QUAN TRỌNG */
+        border-radius: 20px; 
+    overflow: hidden;  
 }
 
 .profile {
@@ -186,18 +185,26 @@ body {
     animation: spin 1.5s linear infinite;
 }
 @media (max-width: 768px) {
+
+    /* BODY */
     body {
         height: auto;
         padding: 10px;
         align-items: flex-start;
     }
+
+    /* KHUNG NGOÀI */
     .outer {
         padding: 15px;
         width: 100%;
     }
+
+    /* WRAPPER */
     .wrapper {
         width: 100%;
     }
+
+    /* BACKGROUND */
     .top {
         height: 200px;
     }
@@ -208,11 +215,15 @@ body {
         left: 15px;
         transform: none; /* 👈 QUAN TRỌNG: bỏ lệch */
     }
+
+    /* AVATAR */
     .avatar {
         width: 70px;
         height: 70px;
         transform: translateY(20px);
     }
+
+    /* TEXT HEADER */
     .info-header {
         padding-left: 0; /* 👈 bỏ cái gây lỗi */
     }
@@ -224,14 +235,20 @@ body {
         .info-header p {
             font-size: 12px;
         }
+
+    /* CARD */
     .card {
         margin-top: 50px;
         padding: 15px;
     }
+
+    /* LINKS */
     .links a {
         display: block;
         margin: 8px 0;
     }
+
+    /* MUSIC */
     .music {
         width: 45px;
         height: 45px;
