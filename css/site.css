@@ -16,8 +16,8 @@ body {
 @media (max-width: 768px) {
 
     body {
-        display: block; 
-        height: auto;     
+        display: block !important;
+        height: auto !important;     
         padding: 0;
     }
 
@@ -29,8 +29,8 @@ body {
     }
 
     .wrapper {
-        width: 100%;
-        max-width: 100%;
+        width: 100% !important;
+        max-width: 100% !important;
     }
 
     .top {
