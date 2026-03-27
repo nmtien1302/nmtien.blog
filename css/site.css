@@ -209,8 +209,8 @@ body {
 
     /* WRAPPER FULL */
     .wrapper {
-        width: 100% !important; /* 👈 cho card nở */
-        max-width: 100% !important;
+    width: 100%;
+    max-width: 500px;
         margin: 0;
     }
 
